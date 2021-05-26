@@ -2762,6 +2762,35 @@ const cryptocurrenciesById: { [name: string]: CryptoCurrency } = {
       },
     ],
   },
+  lbry_credits: {
+    type: "CryptoCurrency",
+    id: "lbry_credits",
+    coinType: 0,
+    name: "LBRY Credits",
+    managerAppName: "LBRY",
+    ticker: "LBC",
+    scheme: "lbry_credits",
+    color: "#2c4546",
+    family: "BITCOIN",
+    units: [
+      {
+        name: "LBC",
+        code: "LBC",
+        magnitude: 8,
+      },
+      {
+        name: "LBC",
+        code: "LBC",
+        magnitude: 0,
+      },
+    ],
+    explorerViews: [
+      {
+        tx: "https://crypto.org/explorer/croeseid/tx/$hash",
+        address: "https://explorer.lbry.com/tx/$address",
+      },
+    ],
+  },
 };
 
 const cryptocurrenciesByScheme: { [_: string]: CryptoCurrency } = {};
